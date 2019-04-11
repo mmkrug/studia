@@ -1,4 +1,0 @@
-﻿  assembly_01.cpp
-e:\workspace\projects\assembly_01\assembly_01\assembly_01.cpp(10): warning C4101: "y": lokalna zmienna, do której nie istnieje odwołanie
-e:\workspace\projects\assembly_01\assembly_01\assembly_01.cpp(9): warning C4101: "wej": lokalna zmienna, do której nie istnieje odwołanie
-  assembly_01.vcxproj -> E:\Workspace\Projects\assembly_01\Debug\assembly_01.exe

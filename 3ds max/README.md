@@ -1,1 +1,1 @@
-kilka modeli oraz screeny wykoannych obiektów
+kilka modeli oraz screeny wykonanych obiektów

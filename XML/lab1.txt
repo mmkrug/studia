@@ -1,0 +1,19 @@
+
+	Osoba.
+	1. lista elementów xml do opisu 
+	2. dokument XML z przyk³adow¹ list¹ osób (5)
+
+	Osoba:
+	- imie
+	- nazwisko
+	- pesel
+	- data urodzenia
+	- plec
+	- adres zamieszkania:
+		- ulica
+		- nr domu
+		- nr mieszkania
+		- kod pocztowy
+		- miejscowosc
+	- nr telefonu
+	- email

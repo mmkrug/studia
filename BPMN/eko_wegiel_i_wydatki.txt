@@ -1,0 +1,24 @@
+	
+	Zad 1.  Firma handlowa - Eko Wêgiel
+
+	2 role: sprzedawca i pracownik biurowy.
+	Sprzedawca wysyla oferte do klienta i oczekuje na odpowiedz
+	Jezeli klient napisze/oddzwoni i odmówi skorzystania z oferty, sprawa trafia do archiwum
+	Jezeli klient odesle dokumenty z zamowieniem, sprawa trafia do pracownika biurowego
+	Pracownik biurowy sprawdza, czy dokumenty s¹ kompletne. Jezeli nie, generuje wiadomosc do
+	klienta o uzupelnienie. Jezeli dosle, badz ówczesnie byly wszystkie, pracownik biurowy sporzadza
+	umowe i konczy to proces. Jezeli na dowolnym etapie procesu min¹ 2 tygodnie bez reakcji,	
+	sprawa trafia do archiwum.
+
+
+	Zad 2.	Obs³uga wydatków pracowniczych.
+
+	Po otrzymaniu oœwiadczenia o wydatkach, nale¿y sprawdziæ, czy pracownik ma konto.
+	Je¿eli nie ma, system je tworzy. Oœwiadczenie nastêpnie jest poddawane automatycznej weryfikacji.
+	wszystkie kwoty mniejsze b¹dŸ równe 200z³ s¹ akceptowane automatycznie. System wtedy wystawia
+	zlecenie zap³aty i przelew na konto pracownika. Je¿eli kwota jest wiêksza ni¿200 z³,
+	p³atnoœæ wymaga akceptacji prze³o¿onego. Ten mo¿e wydaæ zgodê, aby system zealizowa³ 
+	p³atnoœæ, b¹dŸ nie  wyraziæ zgody, o czym pracownik powinien zostaæ powiadomiony.
+	Je¿eli w przeci¹gu 7 dni nie ma info dla pracownika, system wysy³a powiadomienie o trwaj¹cej
+	akceptacji. Je¿eli po 30 dniach jest brak reakcji, system zatrzymuje proces i informuje o tym,
+	by pracownik zacz¹³ od nowa.

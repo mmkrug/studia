@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<lista_osob>
+    <osoba>
+        <imie>Adam</imie>
+        <nazwisko>Dam</nazwisko>
+        <pesel>111111111111</pesel>
+        <data_urodzenia>1.1.1991</data_urodzenia>
+        <plec>M</plec>
+        <adres_zamieszkania>
+            <ulica>Akwarelowa</ulica>
+            <nr_domu>11</nr_domu>
+            <nr_mieszkania>1</nr_mieszkania>
+            <kod_pocztowy>11-111</kod_pocztowy>
+            <miejscowosc>Alwernia</miejscowosc>
+        </adres_zamieszkania>
+        <nr_telefonu>123123123</nr_telefonu>
+        <email>adam.dam@gmail.com</email>
+    </osoba>
+
+
+    <osoba>
+        <imie>Bartosz</imie>
+        <nazwisko>Artosz</nazwisko>
+        <pesel>22222222222</pesel>
+        <data_urodzenia>2.2.1992</data_urodzenia>
+        <plec>M</plec>
+        <adres_zamieszkania>
+            <ulica>Bazantowa</ulica>
+            <nr_domu>22</nr_domu>
+            <nr_mieszkania>2</nr_mieszkania>
+            <kod_pocztowy>22-222</kod_pocztowy>
+            <miejscowosc>Barwice</miejscowosc>
+        </adres_zamieszkania>
+        <nr_telefonu>234234234</nr_telefonu>
+        <email>Bartosz.artosz@gmail.com</email>
+    </osoba>
+
+    <osoba>
+        <imie>Celina</imie>
+        <nazwisko>Elina</nazwisko>
+        <pesel>33333333333</pesel>
+        <data_urodzenia>3.3.1993</data_urodzenia>
+        <plec>K</plec>
+        <adres_zamieszkania>
+            <ulica>Chmielna</ulica>
+            <nr_domu>33</nr_domu>
+            <nr_mieszkania>3</nr_mieszkania>
+            <kod_pocztowy>33-333</kod_pocztowy>
+            <miejscowosc>Cieszyn</miejscowosc>
+        </adres_zamieszkania>
+        <nr_telefonu>345345345</nr_telefonu>
+        <email>celina.elina@gmail.com</email>
+    </osoba>
+
+
+    <osoba>
+        <imie>Damian</imie>
+        <nazwisko>Amian</nazwisko>
+        <pesel>44444444444</pesel>
+        <data_urodzenia>4.4.1994</data_urodzenia>
+        <plec>M</plec>
+        <adres_zamieszkania>
+            <ulica>Domowa</ulica>
+            <nr_domu>44</nr_domu>
+            <nr_mieszkania>4</nr_mieszkania>
+            <kod_pocztowy>44-444</kod_pocztowy>
+            <miejscowosc>Dobrzany</miejscowosc>
+        </adres_zamieszkania>
+        <nr_telefonu>456456456</nr_telefonu>
+        <email>damian.amian@gmail.com</email>
+    </osoba>
+
+
+    <osoba>
+        <imie>Eryk</imie>
+        <nazwisko>Ryk</nazwisko>
+        <pesel>55555555555</pesel>
+        <data_urodzenia>5.5.1995</data_urodzenia>
+        <plec>M</plec>
+        <adres_zamieszkania>
+            <ulica>Ekologiczna</ulica>
+            <nr_domu>55</nr_domu>
+            <nr_mieszkania>5</nr_mieszkania>
+            <kod_pocztowy>55-555</kod_pocztowy>
+            <miejscowosc>Elbląg</miejscowosc>
+        </adres_zamieszkania>
+        <nr_telefonu>567567567</nr_telefonu>
+        <email>eryk.ryk@gmail.com</email>
+    </osoba>
+
+</lista_osob>

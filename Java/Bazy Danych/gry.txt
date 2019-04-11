@@ -1,0 +1,29 @@
+Gears of War: Ultimate Edition	August 25, 2015	The Coalition	Microsoft Studios	Third-person shooter
+Caffeine	October 5, 2015	Incandescent Imaging	Incandescent Imaging	Survival horror
+Rise of the Tomb Raider	November 10, 2015	Crystal Dynamics	Square Enix	Action-adventure
+Star Wars Battlefront	November 17, 2015	EA DICE	Electronic Arts	First-person shooter, Third-person shooter
+Tom Clancy's The Division	March 8, 2016	Massive Entertainment	Ubisoft	Action role-playing, survival
+Hitman	March 11, 2016	IO Interactive	Square Enix	Action-adventure, stealth
+Ashes of the Singularity	March 31, 2016	Oxide Games Stardock Entertainment	Stardock Entertainment	Real-time strategy
+Quantum Break	April 5, 2016	Remedy Entertainment	Microsoft Studios	Action-adventure, third-person shooter
+Total War: Warhammer	May 24, 2016	Creative Assembly	Sega	Turn-based strategy, real-time tactics
+Deus Ex: Mankind Divided	August 23, 2016	Eidos Montréal	Square Enix	Action role-playing, first-person shooter, stealth
+The Turing Test	August 30, 2016	Bulkhead Interactive	Square Enix	Puzzle game
+Forza Motorsport 6: Apex	September 6, 2016	Turn 10 Studios	Microsoft Studios	Racing
+Halo 5: Forge	September 8, 2016	343 Industries	Microsoft Studios	First-person shooter
+Heroes & Generals	September 23, 2016	Reto-Moto	Reto-Moto	First-person shooter, Real-time strategy
+Forza Horizon 3	September 27, 2016	Playground Games	Microsoft Studios	Racing
+Gears of War 4	October 11, 2016	The Coalition	Microsoft Studios	Third-person shooter
+Battlezone	October 13, 2016	Rebellion Developments	Rebellion Developments	Action, First-person shooter
+Battlefield 1	October 21, 2016	EA DICE	Electronic Arts	First-person shooter
+Civilization VI	October 21, 2016	Firaxis Games	2K Games	Turn-based strategy, 4X
+Sniper Elite 4	February 14, 2017	Rebellion Developments	Rebellion Developments	Tactical shooter, Stealth
+Halo Wars 2	February 21, 2017	343 Industries Creative Assembly	Microsoft Studios	Real-time strategy
+Serious Sam Fusion 2017	March 20, 2017	Croteam	Devolver Digital	First-person shooter
+Total War: Warhammer II	September 28, 2017	Creative Assembly	Sega	Turn-based strategy, real-time tactics
+FIFA 18	September 29, 2017	EA Canada	Electronic Arts	Sports game
+Forza Motorsport 7	October 3, 2017	Turn 10 Studios	Microsoft Studios	Racing
+Star Wars Battlefront II	November 17, 2017	EA DICE	Electronic Arts	First-person shooter, Third-person shooter
+Rust	February 8, 2018	Facepunch Studios	Facepunch Studios	Action-adventure, Survival
+Sword Art Online: Fatal Bullet	February 23, 2018	Dimps	Bandai Namco Entertainment	Action role-playing, third-person shooter
+Warhammer: Vermintide 2	March 8, 2018	Fatshark	Fatshark	Action

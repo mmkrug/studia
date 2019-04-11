@@ -1,0 +1,394 @@
+﻿<!DOCUMENT html>
+<html>
+<head><title>Plan lekcji</title>
+
+	<style type="text/css">
+	
+		#zegarek { 
+			margin:0 auto;
+			margin-top:30px;
+			width:80px;
+			text-align:center;
+			background:#c7c7c7;
+		}
+		#postep { margin:0 auto; margin-top:30px;
+			height:20px; width:96%; border:2px solid #000;}
+		#done { height:20px; background:#f00; width:100%;
+			text-align:center; }
+		#start { margin:0 auto; text-align:center; }
+		#form { margin:0 auto; margin-top:30px; text-align:center; }
+	</style>
+
+</head>
+<body>
+
+	<div id="zegarek">
+		Jestem zegarkiem.
+	</div>
+	
+	<div id="postep">
+	
+		<div id="done">Pasek postępu</div>
+		</div id="todo"></div>
+	
+	</div>
+	
+	<div id="koment">Komentarz</div>
+	<div id="start">
+		<button onClick="zegar()">Start</button>
+		<a href="plan_lekcji.html"><button>Odśwież</button></a>
+	</div>
+	<div id="form">
+	
+		<button onClick="formularz()">Wpiszę godzinę ręcznie</button><br/>
+	
+		<input type="number" style="display:none; text-align:center;" id="godzina"><br/>
+		<input type="number" style="display:none; text-align:center;" id="minuta"><br/>
+		<input type="number" style="display:none; text-align:center;" id="sekunda"><br/>
+		<input type="button" style="display:none;" id="guzik" onClick="zmien()"  value="Zmień"/>
+		<input type="button" style="display:none;" id="guzik2" onClick="ukryj()" value="Ukryj"/>
+
+	
+	</div>
+	<div id="bonus"></div>
+	
+	<script language="javascript">	
+	
+		function formularz() {
+			document.getElementById("godzina").style.display = '';
+			document.getElementById("minuta").style.display = '';
+			document.getElementById("sekunda").style.display = '';
+			document.getElementById("guzik").style.display = '';
+			document.getElementById("guzik2").style.display = '';
+		}
+		function ukryj() {
+			document.getElementById("godzina").style.display = 'none';
+			document.getElementById("minuta").style.display = 'none';
+			document.getElementById("sekunda").style.display = 'none';
+			document.getElementById("guzik").style.display = 'none';
+			document.getElementById("guzik2").style.display = 'none';
+		
+		}
+		
+		function zegar() {
+			
+			var teraz =  new Date();
+			var godz  = teraz.getHours();
+			var min   = teraz.getMinutes();
+			var sec   =  teraz.getSeconds();
+			var odlicz;
+			var zrobione;
+			var wynik;
+			setTimeout("zegar()",200);
+			
+
+			
+			document.getElementById("zegarek").innerHTML=godz+":"+min+":"+sec;
+		
+	if (godz<7 || (godz==7 && min<20) ){
+		document.getElementById("koment").innerHTML=
+		"Lekcje się nie zaczęły";	
+	
+	}	<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 1     - - - - - - - - - - -->
+		else if ((godz==7) || (godz==8 && min<5)) {
+			document.getElementById("koment").innerHTML=
+			"Trwa #1. Lekcja.";
+			odlicz = min-20;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+			
+		<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 1     - - - - - - - - - - -->
+		if (godz==8 && min<5){
+			odlicz = min+40;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";				
+		}
+	}	<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 2     - - - - - - - - - - -->
+		else if (godz==8 && min>=15){
+			document.getElementById("koment").innerHTML=
+			"Trwa #2. Lekcja.";
+			odlicz = min-15;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+	}	
+		<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 3     - - - - - - - - - - -->
+			else if (godz==9 && min>=10 && min<55){
+			document.getElementById("koment").innerHTML=
+			"Trwa #3. Lekcja.";
+			odlicz = min-10;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+	}	
+		<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 4     - - - - - - - - - - -->
+		else if (godz==10 && min>=5 && min<50){
+			document.getElementById("koment").innerHTML=
+			"Trwa #4. Lekcja.";
+			odlicz = min-5;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";	
+	}	
+		<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 5     - - - - - - - - - - -->
+		else if (godz==11 && min>=10 && min<55){
+			document.getElementById("koment").innerHTML=
+			"Trwa #5. Lekcja.";
+			odlicz = min-10;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+	}	
+		<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 6     - - - - - - - - - - -->
+		else if (godz==12 && min>=5 && min<50){
+			document.getElementById("koment").innerHTML=
+			"Trwa #6. Lekcja.";
+			odlicz = min-5;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+	}	
+		<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 7     - - - - - - - - - - -->
+		else if (godz==13 && min<45){
+			document.getElementById("koment").innerHTML=
+			"Trwa #7. Lekcja.";
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";	
+	}	
+		<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 8     - - - - - - - - - - -->
+		else if ( (godz==13 && min>=55) || (godz==14 && min<40) ){
+			document.getElementById("koment").innerHTML=
+			"Trwa #8. Lekcja.";
+			odlicz = min-55;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+			
+		<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 8     - - - - - - - - - - -->
+			if (godz==14 && min<40){
+				odlicz = min+5;
+				zrobione = (((odlicz/45)+(sec/2700))*100);
+				document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+				document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+			}
+	}	<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 9     - - - - - - - - - - -->	
+		else if ( (godz==14 && min>50) || (godz==15 && min<35)){
+			document.getElementById("koment").innerHTML=
+			"Trwa #9. Lekcja.";
+			odlicz = min-50;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+			
+			<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 9     - - - - - - - - - - -->
+			if (godz==15 && min<35){
+				odlicz = min+10;
+				zrobione = (((odlicz/45)+(sec/2700))*100);
+				document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+				document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+			}
+	}	<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 10     - - - - - - - - - - -->
+		else if ( (godz==15 && min>=45) || (godz==16 && min<30) ){
+			document.getElementById("koment").innerHTML=
+			"Trwa #10. Lekcja.";
+			odlicz = min-45;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+			
+			<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 10     - - - - - - - - - - -->
+			if (godz==16 && min<30) {
+				odlicz = min+15;
+				zrobione = (((odlicz/45)+(sec/2700))*100);
+				document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+				document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+			}
+	}	<!-- - - - - - - - - - - - - - - - - - - - -     Wolne     - - - - - - - - - - -->
+		else if (godz>=16){
+			document.getElementById("koment").innerHTML=
+			"WOOOLNEEEE";
+	}	<!-- - - - - - - - - - - - - - - - - - - - -     Przerwy     - - - - - - - - - - -->
+		else {
+			document.getElementById("done").innerHTML="Odpoczywam.";
+			document.getElementById("done").style.width=100+"%";
+			document.getElementById("done").style.background="#0f0";
+			document.getElementById("koment").innerHTML=
+			"Przerwa. :D";
+	}
+		
+}
+	<!--  FUNKCJA ZMIEN /// FUNKCJA ZMIEN /// FUNKCJA ZMIEN /// FUNKCJA ZMIEN /// FUNKCJA ZMIEN ///  -->
+	function zmien() {
+			
+			
+		if (document.getElementById("godzina").value == '' ||
+				document.getElementById("minuta").value == '' ||
+				document.getElementById("sekunda").value == ''){
+			alert("Dane nie mogą być puste");	
+						
+			} else if (document.getElementById("godzina").value >24 ||
+						document.getElementById("minuta").value >60 ||
+						document.getElementById("sekunda").value >60){
+			 alert("Maksymalne wartości przekroczone");
+			} else if (document.getElementById("godzina").value >=24 &&
+						document.getElementById("minuta").value >0 &&
+						document.getElementById("sekunda").value >0){
+			alert("Maksymalne wartości przekroczone");			
+			}
+	else {
+
+			var godz  =document.getElementById("godzina").value;  //teraz.getHours();
+			var min   =document.getElementById("minuta").value;  //teraz.getMinutes();
+			var sec   =document.getElementById("sekunda").value;//  teraz.getSeconds();
+			var odlicz;
+			var zrobione;
+			var wynik;
+			
+			
+
+			
+			document.getElementById("zegarek").innerHTML=godz+":"+min+":"+sec;
+		
+	if (godz<7 || (godz==7 && min<20) ){
+		document.getElementById("koment").innerHTML=
+		"Lekcje się nie zaczęły";	
+	
+	}	<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 1     - - - - - - - - - - -->
+		else if ((godz==7) || (godz==8 && min<5)) {
+			document.getElementById("koment").innerHTML=
+			"Trwa #1. Lekcja.";
+			odlicz = min-20;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+			
+		<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 1     - - - - - - - - - - -->
+		if (godz==8 && min<5){
+			odlicz = min+40;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";				
+		}
+	}	<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 2     - - - - - - - - - - -->
+		else if (godz==8 && min>=15){
+			document.getElementById("koment").innerHTML=
+			"Trwa #2. Lekcja.";
+			odlicz = min-15;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+	}	
+		<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 3     - - - - - - - - - - -->
+			else if (godz==9 && min>=10 && min<55){
+			document.getElementById("koment").innerHTML=
+			"Trwa #3. Lekcja.";
+			odlicz = min-10;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+	}	
+		<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 4     - - - - - - - - - - -->
+		else if (godz==10 && min>=5 && min<50){
+			document.getElementById("koment").innerHTML=
+			"Trwa #4. Lekcja.";
+			odlicz = min-5;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";	
+	}	
+		<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 5     - - - - - - - - - - -->
+		else if (godz==11 && min>=10 && min<55){
+			document.getElementById("koment").innerHTML=
+			"Trwa #5. Lekcja.";
+			odlicz = min-10;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+	}	
+		<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 6     - - - - - - - - - - -->
+		else if (godz==12 && min>=5 && min<50){
+			document.getElementById("koment").innerHTML=
+			"Trwa #6. Lekcja.";
+			odlicz = min-5;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+	}	
+		<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 7     - - - - - - - - - - -->
+		else if (godz==13 && min<45){
+			document.getElementById("koment").innerHTML=
+			"Trwa #7. Lekcja.";
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";	
+	}	
+		<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 8     - - - - - - - - - - -->
+		else if ( (godz==13 && min>=55) || (godz==14 && min<40) ){
+			document.getElementById("koment").innerHTML=
+			"Trwa #8. Lekcja.";
+			odlicz = min-55;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+			
+		<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 8     - - - - - - - - - - -->
+			if (godz==14 && min<40){
+				odlicz = min+5;
+				zrobione = (((odlicz/45)+(sec/2700))*100);
+				document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+				document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+			}
+	}	<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 9     - - - - - - - - - - -->	
+		else if ( (godz==14 && min>50) || (godz==15 && min<35)){
+			document.getElementById("koment").innerHTML=
+			"Trwa #9. Lekcja.";
+			odlicz = min-50;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+			
+			<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 9     - - - - - - - - - - -->
+			if (godz==15 && min<35){
+				odlicz = min+10;
+				zrobione = (((odlicz/45)+(sec/2700))*100);
+				document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+				document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+			}
+	}	<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 10     - - - - - - - - - - -->
+		else if ( (godz==15 && min>=45) || (godz==16 && min<30) ){
+			document.getElementById("koment").innerHTML=
+			"Trwa #10. Lekcja.";
+			odlicz = min-45;
+			zrobione = (((odlicz/45)+(sec/2700))*100);
+			document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+			document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+			
+			<!-- - - - - - - - - - - - - - - - - - - - -     LEKCJA 10     - - - - - - - - - - -->
+			if (godz==16 && min<30) {
+				odlicz = min+15;
+				zrobione = (((odlicz/45)+(sec/2700))*100);
+				document.getElementById("done").innerHTML= zrobione.toFixed(2)+"%";
+				document.getElementById("done").style.width= zrobione.toFixed(2)+"%";
+			}
+	}	<!-- - - - - - - - - - - - - - - - - - - - -     Wolne     - - - - - - - - - - -->
+		else if (godz>=16){
+			document.getElementById("koment").innerHTML=
+			"WOOOLNEEEE";
+	}	<!-- - - - - - - - - - - - - - - - - - - - -     Przerwy     - - - - - - - - - - -->
+		else {
+			document.getElementById("done").innerHTML="Odpoczywam.";
+			document.getElementById("done").style.width=100+"%";
+			document.getElementById("done").style.background="#0f0";
+			document.getElementById("koment").innerHTML=
+			"Przerwa. :D";
+	}
+		
+}}
+		
+	
+	</script>
+</body>
+</html>

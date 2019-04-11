@@ -1,0 +1,30 @@
+	Gry|    
+	----
+
+	NAzwa | Data | Rodzaj |	Producent
+	LoL 	2012	moba	Riot
+
+
+
+
+	Panstwa|
+	--------
+	
+	Nazwa		Liczba graczy	Preferencje
+	-----		-----------
+	USA		10 000 000	8,2,6,3,4,6
+	Chiny		60 000 000	2,3,5,7,3,3
+
+
+
+
+
+	USA|
+	----
+
+	Gra		Ilosc graczy
+	-----		-----------
+	LoL		1 000 000
+	CS:GO		2 000 000
+	Gears oif war	20 000
+	Dota 2		60 000

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1489957177 source:d:\programowanko\macieze\main.cpp
+	<iostream>
+	<cstdlib>
+	<time.h>
+

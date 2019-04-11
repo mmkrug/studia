@@ -1,0 +1,66 @@
+#!/bin/bash
+echo
+echo
+echo "      /===================================\ "
+echo "      |                                   | "
+echo "      |           Zaliczenie 4            | "
+echo "      |                                   | "
+echo "      |===================================| "
+echo "      |||||||||    Michał Krug    ||||||||| "
+echo "      \===================================/ "
+echo
+echo
+if [ "$3" = "" ]; then
+	echo "   Skrypt został uruchomiony bez wszystkich parametrów"
+	echo "   Plik należy uruchomić:  "
+	echo "   bash $0 plik_zrodlowy plik_wynikowy minimalna_wilgotnosc"
+	echo
+	echo
+	exit;
+fi
+zrodlo=$1
+wynik=$2
+min=$3
+# Tablica z pliku zrodlowego #1
+let i=0
+for zm in $(cat $1);do
+	let tab[$i]=$zm
+	let i=$i+1
+done
+let n=${#tab[*]}
+
+# Tworzenie pliku wynikowego
+let i=2
+let j=0
+let licz=0
+while [ $i -lt $n ]; do
+	let x=${tab[$i]}
+	if [ $x -gt $min ]; then
+		let wyn[$j]=tab[$i-2]
+		let wyn[$j+1]=tab[$i-1]
+		let wyn[$j+2]=tab[$i]
+		let wyn[$j+3]=tab[$i+1]
+		let licz=$licz+1
+	fi
+	
+	let i=$i+4
+	let j=$j+4
+done
+
+if [ $licz -eq 0 ]; then
+	echo "    Plik wynikowy nie został utworzony."
+	echo "    Podana wilgotność jest wyższa od tych, z pliku źródłowego."
+	echo
+	exit;
+fi
+
+echo ${wyn[*]} >> $2
+
+
+
+
+
+
+
+
+

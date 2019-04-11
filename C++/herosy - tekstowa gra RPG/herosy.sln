@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "herosy", "herosy\herosy.vcxproj", "{5CF8F3BC-0F58-43C2-BF6A-5A3761127135}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CF8F3BC-0F58-43C2-BF6A-5A3761127135}.Debug|x64.ActiveCfg = Debug|x64
+		{5CF8F3BC-0F58-43C2-BF6A-5A3761127135}.Debug|x64.Build.0 = Debug|x64
+		{5CF8F3BC-0F58-43C2-BF6A-5A3761127135}.Debug|x86.ActiveCfg = Debug|Win32
+		{5CF8F3BC-0F58-43C2-BF6A-5A3761127135}.Debug|x86.Build.0 = Debug|Win32
+		{5CF8F3BC-0F58-43C2-BF6A-5A3761127135}.Release|x64.ActiveCfg = Release|x64
+		{5CF8F3BC-0F58-43C2-BF6A-5A3761127135}.Release|x64.Build.0 = Release|x64
+		{5CF8F3BC-0F58-43C2-BF6A-5A3761127135}.Release|x86.ActiveCfg = Release|Win32
+		{5CF8F3BC-0F58-43C2-BF6A-5A3761127135}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66BB3863-E73E-49DE-A687-48D01EB3B7F5}
+	EndGlobalSection
+EndGlobal

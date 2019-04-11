@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zegarek</title>
+	<style>
+		#box { background-color:#160160160; text-align:center; margin-top:10%; }
+	</style>
+</head>
+<body onload="javascript:zegar()" style="background-color: rgb(160, 160, 160)">
+<div id="box">
+
+	<div id="hed">
+		
+	
+	</div>
+
+	<div id="zegar">
+	
+		<img id="g1" src="" /> <img id="g2" src="" />
+		
+			<img src="kropki.png" />
+		
+		<img id="m1" src="" /> <img id="m2" src="" /> 
+		
+			<img src="kropki.png" />
+		
+		<img id="s1" src="" /> <img id="s2" src="" /> 
+	
+	</div>
+	
+
+</div>
+	
+	
+	
+	
+	<script language="javascript">
+	var reload = setInterval(zegar, 1000);
+		
+		function zegar(){
+		
+		
+			now = new Date();
+			
+			var godz = now.getHours();
+			var min = now.getMinutes();
+			var sec = now.getSeconds();
+			
+			
+			<!-----     IF GODZIN    ----->
+			if(godz<10){
+				document.getElementById("g1").src = godz+".png";
+			} else {
+				document.getElementById("g1").src = '1.png';
+				document.getElementById("g2").src = (godz-10)+".png";
+			}
+			<!-----     IF MINUT    ----->
+			if(min<10){
+				document.getElementById("m1").src = "0.png";
+				document.getElementById("m2").src = min+".png";
+			}  else if(min<20){
+				document.getElementById("m1").src = '1.png';
+				document.getElementById("m2").src = (min-10)+".png";
+			} else if(min<30){
+				document.getElementById("m1").src = '2.png';
+				document.getElementById("m2").src = (min-20)+".png";
+			} else if(min<40){
+				document.getElementById("m1").src = '3.png';
+				document.getElementById("m2").src = (min-30)+".png";
+			} else if(min<50){
+				document.getElementById("m1").src = '4.png';
+				document.getElementById("m2").src = (min-40)+".png";
+			} else if(min<60){
+				document.getElementById("m1").src = '5.png';
+				document.getElementById("m2").src = (min-50)+".png";
+			} else {
+				document.getElementById("m1").src = '6.png';
+				document.getElementById("m2").src = "0.png";
+			}
+			
+			<!-----     IF  SEKUND    ----->
+			if(sec<10){
+				document.getElementById("s1").src = "0.png";
+				document.getElementById("s2").src = sec+".png";
+			} else if(sec<20){
+				document.getElementById("s1").src = '1.png';
+				document.getElementById("s2").src = (sec-10)+".png";
+			}  else if(sec<30){
+				document.getElementById("s1").src = '2.png';
+				document.getElementById("s2").src = (sec-20)+".png";
+			} else if(sec<40){
+				document.getElementById("s1").src = '3.png';
+				document.getElementById("s2").src = (sec-30)+".png";
+			} else if(sec<50){
+				document.getElementById("s1").src = '4.png';
+				document.getElementById("s2").src = (sec-40)+".png";
+			} else if(sec<60){
+				document.getElementById("s1").src = '5.png';
+				document.getElementById("s2").src = (sec-50)+".png";
+			} else {
+				document.getElementById("s1").src = '6.png';
+				document.getElementById("s2").src = "0.png";
+			}
+			
+
+		}
+		
+	</script>
+
+</body>
+</html>

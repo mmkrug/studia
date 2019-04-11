@@ -1,0 +1,230 @@
+﻿1 Chiny 1 379 302 771
+2 Indie 1 281 935 911
+3 Stany Zjednoczone 326 625 791
+4 Indonezja 260 580 739
+5 Brazylia 207 353 391
+6 Pakistan 204 924 861
+7 Nigeria 190 632 261
+8 Bangladesz 157 826 578
+9 Rosja 142 257 519
+10 Japonia 126 451 398
+11 Meksyk 124 574 795
+12 Etiopia 105 350 020
+13 Filipiny 104 256 076
+14 Egipt 97 041 072
+15 Wietnam 96 160 163
+16 Kongo 83 301 151
+17 Iran 82 021 564
+18 Turcja 80 845 215
+19 Niemcy 80 594 017
+20 Tajlandia 68 414 135
+21 Francja 67 106 161
+22 Wielka Brytania 64 769 452
+23 Włochy 62 137 802
+24 Mjanma 55 123 814
+25 Południowa Afryka 54 841 552
+26 Tanzania 53 950 935
+27 Korea Południowa 51 181 299
+28 Hiszpania 48 958 159
+29 Kolumbia 47 698 524
+30 Kenia 47 615 739
+31 Argentyna 44 293 293
+32 Ukraina 44 033 874
+33 Algieria 40 969 443
+34 Uganda 39 570 125
+35 Irak 39 192 111
+36 Polska 38 476 269
+37 Sudan 37 345 935
+38 Kanada 35 623 680
+39 Afganistan 34 124 811
+40 Maroko 33 986 655
+41 Malezja 31 381 992
+42 Wenezuela 31 304 016
+43 Peru 31 036 656
+44 Uzbekistan 29 748 859
+45 Nepal 29 384 297
+46 Angola 29 310 273
+47 Arabia Saudyjska 28 571 770
+48 Jemen 28 036 829
+49 Ghana 27 499 924
+50 Mozambik 26 573 706
+51 Korea Północna 25 248 140
+52 Madagaskar 25 054 161
+53 Kamerun 24 994 885
+55 Republika Chińska 23 508 428
+56 Australia 23 232 413
+57 Sri Lanka 22 409 381
+58 Rumunia 21 529 967
+59 Burkina Faso 20 107 509
+60 Niger 19 245 344
+61 Malawi 19 196 246
+62 Kazachstan 18 556 698
+63 Syria 18 028 549
+64 Mali 17 885 245
+65 Chile 17 789 267
+66 Holandia 17 084 719
+67 Ekwador 16 290 913
+68 Kambodża 16 204 486
+69 Zambia 15 972 000
+70 Gwatemala 15 460 732
+71 Senegal 14 668 522
+72 Zimbabwe 13 805 084
+73 Sudan Południowy 13 026 129
+74 Gwinea 12 413 867
+75 Czad 12 075 985
+76 Rwanda 11 901 484
+77 Belgia 11 491 346
+78 Burundi 11 466 756
+79 Tunezja 11 403 800
+80 Kuba 11 147 407
+81 Boliwia 11 138 234
+82 Benin 11 038 805
+83 Somalia 11 031 386
+84 Portugalia 10 839 514
+85 Grecja 10 768 477
+86 Dominikana 10 734 247
+87 Czechy 10 674 723
+88 Haiti 10 646 714
+89 Jordania 10 248 069
+90 Azerbejdżan 9 961 396
+91 Szwecja 9 960 487
+92 Węgry 9 850 845
+93 Białoruś 9 549 747
+94 Honduras 9 038 741
+95 Austria 8 754 413
+96 Tadżykistan 8 468 555
+97 Izrael 8 299 706
+98 Szwajcaria 8 236 303
+99 Togo 7 965 055
+100 Hongkong 7 191 503
+101 Laos 7 126 706
+102 Serbia 7 111 024
+103 Bułgaria 7 101 510
+104 Paragwaj 6 943 739
+105 Papua-Nowa Gwinea 6 909 701
+106 Libia 6 653 210
+107 Liban 6 229 794
+108 Salwador 6 172 011
+109 Sierra Leone Sierra Leone 6 163 195
+110 Zjednoczone Emiraty Arabskie Zjednoczone Emiraty Arabskie 6 072 475
+111 Nikaragua 6 025 951
+112 Erytrea 5 918 919
+113 Singapur 5 888 926
+114 Kirgistan 5 789 122
+115 Republika �rodkowoafryka�ska Republika �rodkowoafryka�ska 5 625 118
+116 Dania 5 605 948
+117 Finlandia 5 518 371
+118 S�owacja 5 445 829
+119 Turkmenistan 5 351 277
+120 Norwegia 5 320 045
+121 Irlandia 5 011 102
+122 Kongo 4 954 674
+123 Kostaryka 4 930 258
+124 Gruzja 4 926 330
+125 Liberia 4 689 021
+126 Nowa Zelandia Nowa Zelandia 4 510 327
+127 Chorwacja 4 292 095
+128 Bo�nia i Hercegowina Bo�nia i Hercegowina 3 856 181
+129 Mauretania 3 758 571
+130 Panama 3 753 142
+131 Mo�dawia 3 474 121
+132 Oman 3 424 386
+133 Urugwaj 3 360 148
+134 Portoryko 3 351 827
+135 Mongolia 3 068 243
+136 Albania 3 047 987
+137 Armenia 3 045 191
+138 Jamajka 2 990 561
+139 Kuwejt 2 875 422
+140 Litwa 2 823 859
+141 Zachodni Brzeg 2 747 943
+142 Namibia 2 484 780
+143 Katar 2 314 307
+144 Botswana 2 214 858
+145 Macedonia 2 103 721
+146 Gambia 2 051 363
+147 S�owenia 1 972 126
+148 Lesotho 1 958 042
+149 �otwa 1 944 643
+150 Kosowo 1 895 250
+151 Strefa Gazy 1 795 183
+152 Gwinea Bissau Gwinea Bissau 1 792 338
+153 Gabon 1 772 255
+154 Suazi 1 467 152
+155 Bahrajn 1 410 942
+156 Mauritius 1 356 388
+157 Timor Wschodni Timor Wschodni 1 291 358
+158 Estonia 1 251 581
+159 Cypr 1 221 549
+160 Trynidad i Tobago Trynidad i Tobago 1 218 208
+161 Fid�i 920 938
+162 D�ibuti 865 267
+163 Komory 808 080
+164 Gwinea R�wnikowa Gwinea R�wnikowa 778 358
+165 Bhutan 758 288
+166 Gujana 737 718
+167 Wyspy Salomona Wyspy Salomona 647 581
+168 Czarnog�ra 642 550
+169 Sahara Zachodnia Sahara Zachodnia 603 253
+170 Makau 601 969
+171 Luksemburg 594 130
+172 Surinam 591 919
+173 Republika Zielonego Przyl�dka Republika Zielonego Przyl�dka 560 899
+174 Brunei 443 593
+175 Malta 416 338
+176 Malediwy 392 709
+177 Belize 360 346
+178 Islandia 339 747
+179 Bahamy 329 988
+180 Barbados 292 336
+181 Polinezja Francuska Polinezja Francuska 287 881
+182 Vanuatu 282 814
+183 Nowa Kaledonia Nowa Kaledonia 279 070
+184 Wyspy �wi�tego Tomasza i Ksi���ca Wyspy �wi�tego Tomasza i Ksi���ca 201 025
+185 Samoa 200 108
+186 Guam 167 358
+187 Saint Lucia Saint Lucia 164 994
+188 Cura�ao 149 648
+189 Aruba 115 120
+190 Grenada 111 724
+191 Kiribati 108 145
+192 Wyspy Dziewicze Stan�w Zjednoczonych Wyspy Dziewicze 107 268
+193 Tonga 106 479
+194 Mikronezja 104 196
+195 Saint Vincent i Grenadyny Saint Vincent i Grenadyny 102 089
+196 Jersey 98 840
+197 Antigua i Barbuda Antigua i Barbuda 94 731
+198 Seszele 93 920
+199 Wyspa Man Wyspa Man 88 815
+200 Andora 85 702
+201 Wyspy Marshalla Wyspy Marshalla 74 539
+202 Dominika 73 897
+203 Bermudy 70 864
+204 Guernsey 66 502
+205 Kajmany (wyspy)Kajmany 58 441
+206 Grenlandia 57 713
+207 Saint Kitts i Nevis Saint Kitts i Nevis 52 715
+208 Turks i Caicos Turks i Caicos 52 570
+209 Mariany P�nocne Mariany P�nocne 52 263
+210 Samoa Ameryka�skie Samoa Ameryka�skie 51 504
+211 Wyspy Owcze Wyspy Owcze 50 730
+212 Sint Maarten (terytorium) Sint Maarten 42 083
+213 Liechtenstein 38 244
+214 Brytyjskie Wyspy Dziewicze Brytyjskie Wyspy Dziewicze 35 015
+215 San Marino San Marino 33 573
+216 Saint-Martin Saint-Martin[a] 32 125
+217 Monako 30 645
+218 Gibraltar 29 396
+219 Palau 21 431
+220 Anguilla 17 087
+221 Wallis i Futuna Wallis i Futuna 15 714
+222 Tuvalu 11 052
+223 Nauru 9642
+224 Wyspy Cooka Wyspy Cooka 9290
+225 Wyspa �wi�tej Heleny, Wyspa Wniebowst�pienia i Tristan da Cunha Wyspa �wi�tej Heleny, Wyspa Wniebowst�pienia i Tristan da Cunha 7828
+226 Saint-Barth�lemy Saint-Barth�lemy[a] 7184
+227 Saint-Pierre i Miquelon Saint-Pierre i Miquelon 5533
+228 Montserrat (wyspa) Montserrat 5292
+230 Svalbard 2583
+233 Niue 1618
+235 Watykan 1000

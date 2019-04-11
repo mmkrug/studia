@@ -1,0 +1,36 @@
+#!/bin/bash
+echo
+echo
+echo "      /===================================\ "
+echo "      |                                   | "
+echo "      |       Praca kontrolna nr 1        | "
+echo "      |             8.11.2016             | "
+echo "      |                                   | "
+echo "      |===================================| "
+echo "      |||||||||    Michał Krug    ||||||||| "
+echo "      \===================================/ "
+echo
+echo
+let naj=0;
+let x=0;
+let suma=0;
+let licz=1;
+while [ $x -ge 0 ]; do
+	read -p "    Podaj liczbę nr $licz:  " x
+		if [ $x -lt 0 ]
+			then break;
+		fi
+	let licz=$licz+1;
+	let suma=$suma+$x;
+		if [ $x -gt $naj ]
+			then
+			let naj=$x;
+		fi
+done
+let licz=$licz-1;
+echo
+echo "    Podano: $licz liczb naturalnych"
+echo "    Ich suma wynosi: $suma."
+echo "    Największa podana liczba to: $naj"
+echo
+echo

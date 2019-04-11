@@ -1,0 +1,12 @@
+﻿  Pomijanie... (nie wykryto odpowiednich zmian)
+  stdafx.cpp
+  herosy.cpp
+e:\workspace\projects\herosy\herosy\herosy.cpp(118): warning C4584: "Runa": klasa podstawowa "Item" jest już klasą podstawową "Uzbrojenie"
+  e:\workspace\projects\herosy\herosy\herosy.cpp(67): note: zobacz deklarację „Item”
+  e:\workspace\projects\herosy\herosy\herosy.cpp(76): note: zobacz deklarację „Uzbrojenie”
+e:\workspace\projects\herosy\herosy\herosy.cpp(972): warning C4244: "*=": konwersja z "float" do "int", możliwa utrata danych
+e:\workspace\projects\herosy\herosy\herosy.cpp(973): warning C4244: "*=": konwersja z "float" do "int", możliwa utrata danych
+e:\workspace\projects\herosy\herosy\herosy.cpp(974): warning C4244: "*=": konwersja z "float" do "int", możliwa utrata danych
+e:\workspace\projects\herosy\herosy\herosy.cpp(976): warning C4244: "*=": konwersja z "float" do "int", możliwa utrata danych
+e:\workspace\projects\herosy\herosy\herosy.cpp(977): warning C4244: "*=": konwersja z "float" do "int", możliwa utrata danych
+  herosy.vcxproj -> E:\Workspace\Projects\herosy\Debug\herosy.exe

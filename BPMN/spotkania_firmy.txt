@@ -1,0 +1,15 @@
+
+	1.	Planowanie spotkañ firmy
+
+	Dwa baseny, pierwszy to 'komórka planowania', w której jest koordynator
+	i pracownik wsparcia. W drugim basenie s¹ 'pracownicy'. Pierwszy basen
+	ma 2 linie, a drugi jedn¹. W listopadzie ka¿dego roku, komórka planowania
+	tworzy draft harmonogramu spotkañ na ca³y rok. Nastêpnie dodaje do
+	kalendarzy wszystkich pracowników. Draft przekazywany jest do pracownika
+	wsparcia, który sprawdza daty i proponuje modyfikacje. Wszystie modyfikacje
+	s¹ akceptowane przez koordynatora, który finalizuje harmonogram i rozsy³a
+	do pracowników. Pracownicy otrzymuj¹ harmonogram i weryfikuj¹ pod k¹tem
+	konfliktów, nastêpnie wysy³aj¹ informacje do pracownika wsparcia, który
+	po otrzymaniu wiadomoœci aktualizuje harmonogram i jego ostateczn¹
+	wersjê wysy³a pracownikom.
+	

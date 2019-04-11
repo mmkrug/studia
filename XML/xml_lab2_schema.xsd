@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+
+    <xs:simpleType name="String40">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="40" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="String5">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="5"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="plecType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="K"/>
+            <xs:enumeration value="M"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="nr_telefonuType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(\+[0-9]{11})|([0-9]{9})"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="emailType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@]+@[^\.]+\..+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="kod_pocztowyType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{2}\-[0-9]{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:complexType name="adres_zamieszkaniaType">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="ulica" type="String40"/>
+            <xs:element name="nr_domu" type="String5" />
+            <xs:element name="nr_mieszkania" type="String5" />
+            <xs:element name="kod_pocztowy" type="kod_pocztowyType" />
+            <xs:element name="miejscowosc" type="String40" />
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="osobaType">
+        <xs:sequence>
+            <xs:element name="imie" type="String40"/>
+            <xs:element name="nazwisko" type="String40"/>
+            <xs:element name="pesel" type="String40"/>
+            <xs:element name="data_urodzenia" type="String40"/>
+            <xs:element name="plec" type="plecType"/>
+            <xs:element name="adres_zamieszkania" type="adres_zamieszkaniaType" />
+            <xs:element name="nr_telefonu" type="nr_telefonuType" />
+            <xs:element name="email" type="emailType" />
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="lista_osobType">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="osoba" type="osobaType" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="lista_osob" type="lista_osobType" />
+
+</xs:schema>
+
+<!--
+<lista_osob>
+    <osoba>
+    <imie>Damian</imie>                         String 0-40
+    <naziwsko>Amian</naziwsko>                  String 0-40
+    <pesel>44444444444</pesel>                  String 11
+    <data_urodzenia>4.4.1994</data_urodzenia>   date
+    <plec>mezczyzna</plec>                      enum M,K
+    <adres_zamieszkania>                        0-INF
+        <ulica>Domowa</ulica>                   String 0-40
+        <nr_domu>44</nr_domu>                   String 1-5
+        <nr_mieszkania>4</nr_mieszkania>        String 1-5
+        <kod_pocztowy>44-444</kod_pocztowy>     cc-ccc
+        <miejscowosc>Dobrzany</miejscowosc>     String 0-40
+    </adres_zamieszkania>
+    <nr_telefonu>456456456</nr_telefonu>        +11c LUB 9c
+    <email>damian.amian@gmail.com</email>       *@*.*
+    </osoba>
+</lista_osob>
+-->

@@ -1,0 +1,102 @@
+body {
+    background-color:lightgray;
+}
+
+#container {
+    width:99%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+#header {
+    background-color:#999999;
+    text-align:center;
+    height:60px;
+    color:#0000FF;
+    margin-bottom:1%;
+}
+
+
+#menu_left {
+    float:left;
+    width:20%;
+    text-align:left;
+}
+.link{
+    color:black;
+    text-decoration:none;
+}
+
+
+
+.box{
+    padding:4px;
+    background-color:#db9833;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,1);
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,1);
+}
+
+
+#content {
+    min-height:400px;
+    float:left;
+    margin-left:2%;
+    margin-right:2%;
+    margin-bottom:2%;
+    background-color:#db9833;
+    text-align:left;
+    padding:2%;
+    width:52%;
+}
+#content_left {
+    float:left;
+}
+#content_right {
+    float:left;
+}
+#submit_button{
+    text-align:center;
+}
+.stronicowanie{
+    padding:10px;
+    font-size:20px;
+    text-align:right;
+}
+
+
+#menu_right {
+    float:left;
+    width:20%;
+    background-color:#db9833;
+    text-align:left;
+    min-height:200px;
+}
+
+
+#footer {
+    clear:both;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#999999;
+    text-align:center;
+    height:60px;
+}
+
+
+.error{
+    color:red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+table.tabela_wynikow{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table.tabela_wynikow tr td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding:4px;
+}

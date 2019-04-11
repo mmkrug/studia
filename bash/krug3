@@ -1,0 +1,61 @@
+#!/bin/bash
+echo
+echo
+echo "      /===================================\ "
+echo "      |                                   | "
+echo "      |            Kolokwium 3            | "
+echo "      |                                   | "
+echo "      |===================================| "
+echo "      |||||||||    Michał Krug    ||||||||| "
+echo "      \===================================/ "
+echo
+echo
+if [ "$4" = "" ]; then
+	echo "   Skrypt został uruchomiony bez wszystkich parametrów "
+	echo "   Plik należy uruchomić:  "
+	echo "   bash $0 dane1 dane2 plik_filtru plik_wynikowy "
+	echo
+	echo
+	exit;
+fi
+# Tablica z danymi z pliku z danymi #1
+let i=0
+for zm in $(cat plik1);do
+	let tab1[$i]=$zm
+	let i=$i+1
+done
+# Tablica z danymi z pliku z danymi #2
+let i=0
+for zm in $(cat plik2);do
+	let tab2[$i]=$zm
+	let i=$i+1
+done
+# Tablica z danymi z pliku filtr
+let i=0
+for zm in $(cat filtr);do
+	let tab3[$i]=$zm
+	let i=$i+1
+done
+echo "    Pobranie danych z plików '$1' '$2' '$3' zakończone. "
+
+let i=0
+while [ $i -lt 20 ]; do
+	#aktualnie przybrane parametry z danej iteracji
+	let k1=${tab1[$i]}
+	let k2=${tab2[$i]}
+	let k3=${tab3[$i]}
+
+	if [ $k3 -eq 0 ]; then
+		let wynik[$i]=$k1
+	else
+		let wynik[$i]=$k2
+	fi
+	
+let i=$i+1
+done
+
+echo ${wynik[*]} > $4
+
+echo "    Plik wynikowy '$4' utworzony. "
+echo
+echo
